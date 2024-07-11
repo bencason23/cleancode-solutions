@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d4a0673.chunk.css",
-    "main.js": "/static/js/main.da9edec8.chunk.js",
-    "main.js.map": "/static/js/main.da9edec8.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.94c5bc57.js",
-    "runtime~main.js.map": "/static/js/runtime~main.94c5bc57.js.map",
-    "static/js/2.68692d29.chunk.js": "/static/js/2.68692d29.chunk.js",
-    "static/js/2.68692d29.chunk.js.map": "/static/js/2.68692d29.chunk.js.map",
-    "static/js/3.cf2aeaea.chunk.js": "/static/js/3.cf2aeaea.chunk.js",
-    "static/js/3.cf2aeaea.chunk.js.map": "/static/js/3.cf2aeaea.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.46d4d04b69f0cb84bef18cb6d2e72521.js": "/precache-manifest.46d4d04b69f0cb84bef18cb6d2e72521.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.1d4a0673.chunk.css.map": "/static/css/main.1d4a0673.chunk.css.map"
+    "main.css": "/cleancode-solutions/static/css/main.1d4a0673.chunk.css",
+    "main.js": "/cleancode-solutions/static/js/main.da9edec8.chunk.js",
+    "main.js.map": "/cleancode-solutions/static/js/main.da9edec8.chunk.js.map",
+    "runtime~main.js": "/cleancode-solutions/static/js/runtime~main.54d44f0e.js",
+    "runtime~main.js.map": "/cleancode-solutions/static/js/runtime~main.54d44f0e.js.map",
+    "static/js/2.68692d29.chunk.js": "/cleancode-solutions/static/js/2.68692d29.chunk.js",
+    "static/js/2.68692d29.chunk.js.map": "/cleancode-solutions/static/js/2.68692d29.chunk.js.map",
+    "static/js/3.cf2aeaea.chunk.js": "/cleancode-solutions/static/js/3.cf2aeaea.chunk.js",
+    "static/js/3.cf2aeaea.chunk.js.map": "/cleancode-solutions/static/js/3.cf2aeaea.chunk.js.map",
+    "index.html": "/cleancode-solutions/index.html",
+    "precache-manifest.99f6bf8534c784e048ea92c1620be4a4.js": "/cleancode-solutions/precache-manifest.99f6bf8534c784e048ea92c1620be4a4.js",
+    "service-worker.js": "/cleancode-solutions/service-worker.js",
+    "static/css/main.1d4a0673.chunk.css.map": "/cleancode-solutions/static/css/main.1d4a0673.chunk.css.map"
   }
 }
