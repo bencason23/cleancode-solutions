@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "version": "0.1.0",
   "private": true,
-  "Homepage": "https://bencason23.github.io/my-react-app",
+  "homepage": "https://bencason23.github.io/cleancode-solutions",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
