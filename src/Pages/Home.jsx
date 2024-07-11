@@ -16,7 +16,7 @@ const books = [
   },
   {
     id: 2,
-    title: 'The economics book',
+    title: 'The economics books',
     author: 'Big ideas',
     
     imageUrl: 'economics 1.jpeg',

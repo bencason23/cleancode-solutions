@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 
 const ReturnedBookForm = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
   const [formData, setFormData] = useState({
     bookId: '',
     borrowerName: '',
@@ -52,6 +54,9 @@ const ReturnedBookForm = () => {
 
   return (
     <div className="form-container">
+      <button className="back-button" onClick={() => navigate('/ReturnedBooksDashboard')}>
+        ← Back
+      </button>
       {showAlert && <div className="alert">{message}</div>}
       <form onSubmit={handleSubmit}>
         <div className="form-group">
