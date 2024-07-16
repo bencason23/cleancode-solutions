@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bencason23.github.io/cleancode-solutions",
+  "homepage": "https://cleancodsolution.onrender.com",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
@@ -12,7 +12,6 @@
     "axios": "^1.7.2",
     "cors": "^2.8.5",
     "modules": "^0.4.0",
-    "node": "^22.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hamburger-menu": "^1.2.1",
@@ -22,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
