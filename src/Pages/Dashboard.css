@@ -1,0 +1,138 @@
+/* Dashboard.css */
+
+.dashboard {
+  padding: 10px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #341899;
+  color: #fff;
+  padding: 10px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 50px;
+}
+
+.header-right {
+  position: relative;
+}
+
+.sidebar {
+  background-color: whitesmoke;
+  padding: 20px;
+  position: fixed; /* Fixed position to keep it at the top right corner */
+  top: 30px; /* Adjust based on the header height */
+  right: -300px; /* Hide sidebar off-screen initially */
+  width: 250px; /* Set a fixed width for the sidebar */
+  height: calc(100% - 60px); /* Adjust based on the header height */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease; /* Smooth transition */
+}
+
+.sidebar.open {
+  right: 0; /* Show sidebar when open */
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.book-card {
+  background-color: #fff;
+  border: 1px solid #10ac4c;
+  border-radius: 5px;
+  padding: 15px;
+  height: auto;
+  width: calc(100% - 30px); /* Show one wide card per row on extra small screens */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px; /* Add margin between cards */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.books-count {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.book-card h3 {
+  margin-bottom: 10px;
+  overflow: hidden; /* Prevent text overflow */
+  white-space: nowrap; /* Ensure text stays on one line */
+  text-overflow: ellipsis; /* Add ellipsis for truncated text */
+}
+
+.book-card p {
+  margin-bottom: 5px;
+  overflow: hidden; /* Prevent text overflow */
+  white-space: nowrap; /* Ensure text stays on one line */
+  text-overflow: ellipsis; /* Add ellipsis for truncated text */
+}
+
+@media screen and (min-width: 481px) {
+  .book-card {
+    width: calc(50% - 20px); /* Show 2 cards per row on small screens */
+    padding: 15px; /* Adjust padding for smaller cards */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .book-card {
+    width: calc(33.33% - 20px); /* Show 3 cards per row on medium screens */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .book-card {
+    width: calc(25% - 20px); /* Show 4 cards per row on large screens */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .book-card {
+    width: calc(20% - 20px); /* Show 5 cards per row on extra large screens */
+  }
+
+
+
+.search-bar {
+  padding: 8px 16px; /* Added more padding for better circular shape */
+  margin: 0 auto; /* Center the search bar horizontally */
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Circular shape */
+  width: 20%; /* Adjust the width as needed */
+}
+
+.dashboard-header .header-right {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  width: 20%; /* Ensure the header-right section takes full width */
+}
+
+ 
+}
