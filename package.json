@@ -19,10 +19,11 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^3.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "serve": "^14.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -67,7 +68,7 @@
         "envVars": [
           {
             "key": "MONGO_URI",
-            "value": "mongodb+srv://bencason23:2s4CVftdnfKSKckr@cluster0.zvehgxv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'"
+            "value": "mongodb+srv://bencason23:2s4CVftdnfKSKckr@cluster0.zvehgxv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
           },
           {
             "key": "PORT",
