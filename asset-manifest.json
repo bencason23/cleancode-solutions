@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bencason23/cleancode-solutions.git/static/css/main.965ed863.css",
-    "main.js": "/bencason23/cleancode-solutions.git/static/js/main.cdbbb09f.js",
-    "static/js/453.1407b060.chunk.js": "/bencason23/cleancode-solutions.git/static/js/453.1407b060.chunk.js",
-    "index.html": "/bencason23/cleancode-solutions.git/index.html",
-    "main.965ed863.css.map": "/bencason23/cleancode-solutions.git/static/css/main.965ed863.css.map",
-    "main.cdbbb09f.js.map": "/bencason23/cleancode-solutions.git/static/js/main.cdbbb09f.js.map",
-    "453.1407b060.chunk.js.map": "/bencason23/cleancode-solutions.git/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/cleancode-solutions/static/css/main.965ed863.css",
+    "main.js": "/cleancode-solutions/static/js/main.fd4f58e3.js",
+    "static/js/453.1407b060.chunk.js": "/cleancode-solutions/static/js/453.1407b060.chunk.js",
+    "index.html": "/cleancode-solutions/index.html",
+    "main.965ed863.css.map": "/cleancode-solutions/static/css/main.965ed863.css.map",
+    "main.fd4f58e3.js.map": "/cleancode-solutions/static/js/main.fd4f58e3.js.map",
+    "453.1407b060.chunk.js.map": "/cleancode-solutions/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.965ed863.css",
-    "static/js/main.cdbbb09f.js"
+    "static/js/main.fd4f58e3.js"
   ]
 }
