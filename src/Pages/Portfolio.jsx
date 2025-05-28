@@ -60,7 +60,7 @@ const Profile = () => {
             <p className="skill-description">Utility-first CSS framework for building custom, responsive designs efficiently.</p>
           </div>
           <div className="skill-card">
-            <img src="javascript.JPEG" alt="JavaScript" className="skill-icon" />
+            <img src="javascript.jpeg" alt="JavaScript" className="skill-icon" />
             <p className="skill-name">JavaScript</p>
             <p className="skill-description">Powerful scripting language for dynamic, interactive web applications.</p>
           </div>
