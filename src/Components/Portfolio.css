@@ -9,7 +9,7 @@ body {
 
 /* Full-width Profile Container */
 .profile-container {
-  background:url ('public/color.jpeg') no repeat center center fixed;
+  background:url ('color.jpeg') no repeat center center fixed;
   width: 100%;
   max-width: 1200px;
   padding: 20px;
