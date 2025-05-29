@@ -2,14 +2,14 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background:url ('public/color.jpeg') no-repeat center center fixed;
+  background: url('public/color.jpeg') no-repeat center center fixed;
   background-size: cover;
   color: #000;
 }
 
 /* Full-width Profile Container */
 .profile-container {
-  background:url ('color.jpeg') no repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.8); /* Fixed background color */
   width: 100%;
   max-width: 1200px;
   padding: 20px;
@@ -164,18 +164,20 @@ body {
 .skills-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .skill-card {
+  flex: 1 1 calc(25% - 40px); /* Four per row */
+  box-sizing: border-box;
   background-color: white;
   border: 1px solid red;
   border-radius: 8px;
   padding: 20px;
-  margin: 20px;
-  width: 250px;
   text-align: left;
   color: black;
+  margin: 10px 0;
 }
 
 .skill-icon {
@@ -288,8 +290,7 @@ textarea {
 
   .project-card,
   .skill-card {
-    width: 90%;
-    margin: 10px 0;
+    width: 90% !important;
   }
 
   .contact-form-container {
