@@ -4,10 +4,7 @@ import '../Components/Portfolio.css'; // Make sure the path is correct
 const Profile = () => {
   return (
     <div className="profile-container">
-      {/* Get My Resume Button */}
-      <a href="new cv.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
-        Get My Resume
-      </a>
+      
 
       {/* Profile Section */}
       <div className="profile-box">
