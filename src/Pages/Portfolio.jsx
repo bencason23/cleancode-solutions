@@ -108,7 +108,7 @@ const Profile = () => {
           <div className="project-card">
             <img src="library.JPEG" alt="Project 2" className="project-icon" />
             <p className="project-title">Library Management Website is a digital platform designed to streamline the organization and tracking of library resources.</p>
-            <a href="https://github.com/your-github-username/project2" target="_blank" rel="noopener noreferrer">
+            <a href="https://cleancode-solutions.onrender.com" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
