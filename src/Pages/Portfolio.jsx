@@ -79,7 +79,7 @@ const Profile = () => {
             </a>
           </div>
           <div className="project-card">
-            <img src="" alt="Shoe Shop Project" className="project-icon" />
+            <img src="portfolio.png" alt="portfolio Project" className="project-icon" />
             <p className="project-title">
               my portfolio project showcasing skills and some of my project i have worked on and also my skills both technical and soft skills.
             </p>
