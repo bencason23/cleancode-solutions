@@ -99,21 +99,21 @@ const Profile = () => {
         <h2 className="projects-title">Some of My Projects</h2>
         <div className="projects-row">
           <div className="project-card">
-            <img src="project 3.PNG" alt="Project 1" className="project-icon" />
+            <img src="project 3.png" alt="Project 1" className="project-icon" />
             <p className="project-title">innovative website dedicated to environmental conservation and sustainability.</p>
             <a href="https://github.com/bencason23/cleancode-solutions.git" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
           <div className="project-card">
-            <img src="library.JPEG" alt="Project 2" className="project-icon" />
+            <img src="library.jpeg" alt="Project 2" className="project-icon" />
             <p className="project-title">Library Management Website is a digital platform designed to streamline the organization and tracking of library resources.</p>
             <a href="https://cleancode-solutions.onrender.com" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
           <div className="project-card">
-            <img src="shoe shop.PNG" alt="Project 3" className="project-icon" />
+            <img src="shoe shop.png" alt="Project 3" className="project-icon" />
             <p className="project-title"> a digital platform where customers can browse, select, and purchase shoes from a wide range of styles, brands, and sizes.</p>
             <a href="https://github.com/your-github-username/project3" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
