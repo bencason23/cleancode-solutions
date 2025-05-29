@@ -2,7 +2,7 @@
 
 /* Full-width Profile Container */
 .profile-container {
-  background-color: rgba(255, 255, 255, 0.8); /* Fixed background color */
+  background-color: red; /* Fixed background color */
   width: 100%;
   max-width: 1200px;
   padding: 20px;
