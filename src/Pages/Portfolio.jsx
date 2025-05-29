@@ -79,11 +79,11 @@ const Profile = () => {
             </a>
           </div>
           <div className="project-card">
-            <img src="shoe shop.png" alt="Shoe Shop Project" className="project-icon" />
+            <img src="" alt="Shoe Shop Project" className="project-icon" />
             <p className="project-title">
-              A digital platform where customers can browse, select, and purchase shoes from a wide range of styles.
+              my portfolio project showcasing skills and some of my project i have worked on and also my skills both technical and soft skills.
             </p>
-            <a href="https://github.com/bencason23/shoe-shop" target="_blank" rel="noopener noreferrer">
+            <a href="cleancode-solutions.vercel.app" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
