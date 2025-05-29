@@ -1,11 +1,4 @@
-/* Apply Background Image */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: url('public/color.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  color: #000;
-}
+
 
 /* Full-width Profile Container */
 .profile-container {
