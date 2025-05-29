@@ -2,7 +2,7 @@
 
 /* Full-width Profile Container */
 .profile-container {
-  background-color: url('color.jpeg'); /* Fixed background color */
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   width: 100%;
   max-width: 1200px;
   padding: 20px;
