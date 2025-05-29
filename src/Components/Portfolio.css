@@ -4,8 +4,8 @@
 .profile-container {
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   width: 100%;
-  max-width: 1200px;
-  padding: 20px;
+  max-width: 1800px;
+  padding: 30px;
   margin: auto;
   position: relative;
 }
