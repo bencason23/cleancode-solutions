@@ -109,7 +109,7 @@ const Profile = () => {
             <img src="library.jpeg" alt="Project 2" className="project-icon" />
             <p className="project-title">Library Management Website is a digital platform designed to streamline the organization and tracking of library resources.</p>
             <a href="https://cleancode-solutions.onrender.com" target="_blank" rel="noopener noreferrer">
-              <button className="project-github-button">GitHub</button>
+              <button className="project-github-button">visit site</button>
             </a>
           </div>
           <div className="project-card">
@@ -123,27 +123,54 @@ const Profile = () => {
         </div>
       </div>
 
-      {/* Contact Form Section */}
-      <div className="contact-form-container">
-        <h2 className="contact-title">Contact Me</h2>
-        <form className="contact-form">
-          <div className="form-group">
-            <label htmlFor="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Your Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-          </div>
-          <button type="submit" className="contact-button">Send Message</button>
-        </form>
-      </div>
+      
+    <div className="contact-form-container">
+      <h2 className="contact-title">Contact Me</h2>
+      <form
+        className="contact-form"
+        action="https://formspree.io/f/mgvkqopy"  // Replace with your Formspree endpoint
+        method="POST"
+      >
+        <div className="form-group">
+          <label htmlFor="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" className="contact-button">
+          Send Message
+        </button>
+      </form>
     </div>
   );
 };
 
-export default Profile;
+export default profile;
+
