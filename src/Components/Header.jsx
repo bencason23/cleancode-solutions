@@ -24,6 +24,10 @@ const Header = () => {
           <li><a href="#skills" onClick={toggleNav}>Skills</a></li>
           <li><a href="#projects" onClick={toggleNav}>Projects</a></li>
           <li><a href="#contact" onClick={toggleNav}>Contact</a></li>
+          {/* Get My Resume Button */}
+      <a href="new cv.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+        Get My Resume
+      </a>
         </ul>
       </nav>
     </header>
