@@ -70,22 +70,22 @@ const Profile = () => {
             <p className="skill-description">JavaScript runtime for building scalable server-side applications.</p>
           </div>
           <div className="skill-card">
-            <img src="mysql.PNG" alt="MySQL" className="skill-icon" />
+            <img src="mysql.png" alt="MySQL" className="skill-icon" />
             <p className="skill-name">MySQL</p>
             <p className="skill-description">Popular relational database management system.</p>
           </div>
           <div className="skill-card">
-            <img src="git.PNG" alt="Git" className="skill-icon" />
+            <img src="git.png" alt="Git" className="skill-icon" />
             <p className="skill-name">Git</p>
             <p className="skill-description">Version control system for tracking changes in source code.</p>
           </div>
           <div className="skill-card">
-            <img src="team player 2.JPEG" alt="Git" className="skill-icon" />
+            <img src="team player 2.jpeg" alt="Git" className="skill-icon" />
             <p className="skill-name">team player</p>
             <p className="skill-description">I am a dedicated team player</p>
           </div>
           <div className="skill-card">
-            <img src="problem solver.JPEG" alt="Git" className="skill-icon" />
+            <img src="problem solver.jpeg" alt="Git" className="skill-icon" />
             <p className="skill-name">problem solver</p>
             <p className="skill-description">ability to indentify and solve problems</p>
           </div>
@@ -100,21 +100,21 @@ const Profile = () => {
         <div className="projects-row">
           <div className="project-card">
             <img src="project 3.PNG" alt="Project 1" className="project-icon" />
-            <p className="project-title">innovative website dedicated to environmental conservation and sustainability. It provides tools to record and monitor tree plantations, track growth, and maintain detailed ecological data. The platform features a built-in carbon calculator to estimate carbon offset contributions, empowering individuals, organizations, and communities to measure their environmental impact and take informed steps toward a greener future.</p>
+            <p className="project-title">innovative website dedicated to environmental conservation and sustainability.</p>
             <a href="https://github.com/bencason23/cleancode-solutions.git" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
           <div className="project-card">
             <img src="library.JPEG" alt="Project 2" className="project-icon" />
-            <p className="project-title">Library Management Website is a digital platform designed to streamline the organization and tracking of library resources. It allows users to manage **book records**, including adding, updating, and deleting entries, tracking availability, and categorizing books. The system supports functions like **searching for books**, monitoring borrow/return transactions, and generating reports, making library operations efficient and user-friendly. Ideal for schools, public libraries, and private collections, it enhances accessibility and ensures accurate record-keeping.</p>
+            <p className="project-title">Library Management Website is a digital platform designed to streamline the organization and tracking of library resources.</p>
             <a href="https://github.com/your-github-username/project2" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
           <div className="project-card">
             <img src="shoe shop.PNG" alt="Project 3" className="project-icon" />
-            <p className="project-title"> a digital platform where customers can browse, select, and purchase shoes from a wide range of styles, brands, and sizes. The website offers convenient features such as product filters, detailed descriptions, size guides, secure payment options, and home delivery. With a user-friendly interface and a variety of shoe categories, from casual to formal, athletic to trendy, an online shoe shop provides a seamless shopping experience from the comfort of your home.</p>
+            <p className="project-title"> a digital platform where customers can browse, select, and purchase shoes from a wide range of styles, brands, and sizes.</p>
             <a href="https://github.com/your-github-username/project3" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
