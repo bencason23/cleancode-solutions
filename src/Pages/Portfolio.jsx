@@ -1,6 +1,5 @@
 import React from 'react';
-import '../Components/Portfolio.css'; // Ensure the path is correct
-// Removed unnecessary Header import since it's not used here
+import '../Components/Portfolio.css'; // Make sure the path is correct
 
 const Profile = () => {
   return (
@@ -20,7 +19,12 @@ const Profile = () => {
       <div className="about-me-container">
         <h2><b>ABOUT ME</b></h2>
         <p className="about-me-description">
-           Hi I am a lifelong learner and technology enthusiast who thrives in dynamic and collaborative environments. From a young age, I’ve been drawn to the process of building, troubleshooting, and optimizing applications. My journey in tech has taught me the importance of creativity, resilience, and continuous improvement. Whether working on front-end interfaces that delight users or back-end systems that enhance performance, I am dedicated to creating solutions that make a difference. Outside of coding, I enjoy exploring emerging tech trends, and I’m always eager to expand my knowledge in software development and cyber security.
+          Hi, I am a lifelong learner and technology enthusiast who thrives in dynamic and collaborative environments.
+          From a young age, I’ve been drawn to the process of building, troubleshooting, and optimizing applications.
+          My journey in tech has taught me the importance of creativity, resilience, and continuous improvement.
+          Whether working on front-end interfaces that delight users or back-end systems that enhance performance,
+          I am dedicated to creating solutions that make a difference. Outside of coding, I enjoy exploring emerging
+          tech trends and I’m always eager to expand my knowledge in software development and cybersecurity.
         </p>
       </div>
 
@@ -29,68 +33,26 @@ const Profile = () => {
         <h2 className="skills-title">My Skills</h2>
         <div className="skills-row">
           {/* Skill Cards */}
-          <div className="skill-card">
-            <img src="download.png" alt="PHP" className="skill-icon" />
-            <p className="skill-name">PHP</p>
-            <p className="skill-description">Server-side scripting language for creating dynamic web pages and applications.</p>
-          </div>
-          <div className="skill-card">
-            <img src="logo192.png" alt="React.js" className="skill-icon" />
-            <p className="skill-name">React.js</p>
-            <p className="skill-description">JavaScript library for building interactive and reusable UI components.</p>
-          </div>
-          <div className="skill-card">
-            <img src="cyber.jpeg" alt="Cyber Security" className="skill-icon" />
-            <p className="skill-name">Cyber Security</p>
-            <p className="skill-description">Knowledge in securing systems and protecting data from cyber threats.</p>
-          </div>
-          <div className="skill-card">
-            <img src="HTML.png" alt="HTML" className="skill-icon" />
-            <p className="skill-name">HTML</p>
-            <p className="skill-description">The foundational markup language used to structure web content.</p>
-          </div>
-          <div className="skill-card">
-            <img src="CSS.png" alt="CSS" className="skill-icon" />
-            <p className="skill-name">CSS</p>
-            <p className="skill-description">Styling language used to design and layout web pages.</p>
-          </div>
-          <div className="skill-card">
-            <img src="tailwind.png" alt="Tailwind CSS" className="skill-icon" />
-            <p className="skill-name">Tailwind CSS</p>
-            <p className="skill-description">Utility-first CSS framework for building custom, responsive designs efficiently.</p>
-          </div>
-          <div className="skill-card">
-            <img src="javascript.jpeg" alt="JavaScript" className="skill-icon" />
-            <p className="skill-name">JavaScript</p>
-            <p className="skill-description">Powerful scripting language for dynamic, interactive web applications.</p>
-          </div>
-          <div className="skill-card">
-            <img src="NODE 2.png" alt="Node.js" className="skill-icon" />
-            <p className="skill-name">Node.js</p>
-            <p className="skill-description">JavaScript runtime for building scalable server-side applications.</p>
-          </div>
-          <div className="skill-card">
-            <img src="mysql.png" alt="MySQL" className="skill-icon" />
-            <p className="skill-name">MySQL</p>
-            <p className="skill-description">Popular relational database management system.</p>
-          </div>
-          <div className="skill-card">
-            <img src="git.png" alt="Git" className="skill-icon" />
-            <p className="skill-name">Git</p>
-            <p className="skill-description">Version control system for tracking changes in source code.</p>
-          </div>
-          <div className="skill-card">
-            <img src="team player 2.jpeg" alt="Git" className="skill-icon" />
-            <p className="skill-name">team player</p>
-            <p className="skill-description">I am a dedicated team player</p>
-          </div>
-          <div className="skill-card">
-            <img src="problem solver.jpeg" alt="Git" className="skill-icon" />
-            <p className="skill-name">problem solver</p>
-            <p className="skill-description">ability to indentify and solve problems</p>
-          </div>
-
-
+          {[
+            { img: 'download.png', name: 'PHP', desc: 'Server-side scripting language for creating dynamic web pages and applications.' },
+            { img: 'logo192.png', name: 'React.js', desc: 'JavaScript library for building interactive and reusable UI components.' },
+            { img: 'cyber.jpeg', name: 'Cyber Security', desc: 'Knowledge in securing systems and protecting data from cyber threats.' },
+            { img: 'HTML.png', name: 'HTML', desc: 'The foundational markup language used to structure web content.' },
+            { img: 'CSS.png', name: 'CSS', desc: 'Styling language used to design and layout web pages.' },
+            { img: 'tailwind.png', name: 'Tailwind CSS', desc: 'Utility-first CSS framework for building custom, responsive designs efficiently.' },
+            { img: 'javascript.jpeg', name: 'JavaScript', desc: 'Powerful scripting language for dynamic, interactive web applications.' },
+            { img: 'NODE 2.png', name: 'Node.js', desc: 'JavaScript runtime for building scalable server-side applications.' },
+            { img: 'mysql.png', name: 'MySQL', desc: 'Popular relational database management system.' },
+            { img: 'git.png', name: 'Git', desc: 'Version control system for tracking changes in source code.' },
+            { img: 'team player 2.jpeg', name: 'Team Player', desc: 'I am a dedicated team player.' },
+            { img: 'problem solver.jpeg', name: 'Problem Solver', desc: 'Ability to identify and solve problems.' },
+          ].map((skill, index) => (
+            <div className="skill-card" key={index}>
+              <img src={skill.img} alt={skill.name} className="skill-icon" />
+              <p className="skill-name">{skill.name}</p>
+              <p className="skill-description">{skill.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -99,78 +61,83 @@ const Profile = () => {
         <h2 className="projects-title">Some of My Projects</h2>
         <div className="projects-row">
           <div className="project-card">
-            <img src="project 3.png" alt="Project 1" className="project-icon" />
-            <p className="project-title">innovative website dedicated to environmental conservation and sustainability.</p>
+            <img src="project 3.png" alt="Environmental Project" className="project-icon" />
+            <p className="project-title">
+              Innovative website dedicated to environmental conservation and sustainability.
+            </p>
             <a href="https://github.com/bencason23/cleancode-solutions.git" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
           <div className="project-card">
-            <img src="library.jpeg" alt="Project 2" className="project-icon" />
-            <p className="project-title">Library Management Website is a digital platform designed to streamline the organization and tracking of library resources.</p>
+            <img src="library.jpeg" alt="Library Project" className="project-icon" />
+            <p className="project-title">
+              Library Management Website designed to streamline the organization and tracking of library resources.
+            </p>
             <a href="https://cleancode-solutions.onrender.com" target="_blank" rel="noopener noreferrer">
-              <button className="project-github-button">visit site</button>
+              <button className="project-github-button">Visit Site</button>
             </a>
           </div>
           <div className="project-card">
-            <img src="shoe shop.png" alt="Project 3" className="project-icon" />
-            <p className="project-title"> a digital platform where customers can browse, select, and purchase shoes from a wide range of styles, brands, and sizes.</p>
-            <a href="https://github.com/your-github-username/project3" target="_blank" rel="noopener noreferrer">
+            <img src="shoe shop.png" alt="Shoe Shop Project" className="project-icon" />
+            <p className="project-title">
+              A digital platform where customers can browse, select, and purchase shoes from a wide range of styles.
+            </p>
+            <a href="https://github.com/bencason23/shoe-shop" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
-          
         </div>
       </div>
 
-      
-    <div className="contact-form-container">
-      <h2 className="contact-title">Contact Me</h2>
-      <form
-        className="contact-form"
-        action="https://formspree.io/f/mgvkqopy"  // Replace with your Formspree endpoint
-        method="POST"
-      >
-        <div className="form-group">
-          <label htmlFor="name">Your Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
+      {/* Contact Form Section */}
+      <div className="contact-form-container">
+        <h2 className="contact-title">Contact Me</h2>
+        <form
+          className="contact-form"
+          action="https://formspree.io/f/mgvkqopy"
+          method="POST"
+        >
+          <div className="form-group">
+            <label htmlFor="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
 
-        <div className="form-group">
-          <label htmlFor="email">Your Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-        </div>
+          <div className="form-group">
+            <label htmlFor="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
 
-        <div className="form-group">
-          <label htmlFor="message">Your Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Enter your message"
-            required
-          ></textarea>
-        </div>
+          <div className="form-group">
+            <label htmlFor="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
 
-        <button type="submit" className="contact-button">
-          Send Message
-        </button>
-      </form>
+          <button type="submit" className="contact-button">
+            Send Message
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
 
-export default profile;
-
+export default Profile;
