@@ -83,7 +83,7 @@ const Profile = () => {
             <p className="project-title">
               my portfolio project showcasing skills and some of my project i have worked on and also my skills both technical and soft skills.
             </p>
-            <a href="cleancode-solutions.vercel.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://cleancode-solutions-3tvxybcv4-bencason23s-projects.vercel.app" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
