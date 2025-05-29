@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">My Portfolio</div>
+      <div className="logo"></div>
 
       <div className="hamburger" onClick={toggleNav}>
         <span></span>
