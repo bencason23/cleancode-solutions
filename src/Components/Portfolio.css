@@ -2,7 +2,7 @@
 
 /* Full-width Profile Container */
 .profile-container {
-  background-color: url('public/color.jpeg'); /* Fixed background color */
+  background-color: url('color.jpeg'); /* Fixed background color */
   width: 100%;
   max-width: 1200px;
   padding: 20px;
