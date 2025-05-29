@@ -6,14 +6,14 @@ const Profile = () => {
   return (
     <div className="profile-container">
       {/* Get My Resume Button */}
-      <a href="my cv.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+      <a href="new cv.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
         Get My Resume
       </a>
 
       {/* Profile Section */}
       <div className="profile-box">
         <img src="profile.jpg" alt="Profile" className="profile-picture" />
-        <h1 className="job-title">ENG.Benson .C. Kamau</h1>
+        <h1 className="job-title">Benson .C. Kamau</h1>
       </div>
 
       {/* About Me Section */}
