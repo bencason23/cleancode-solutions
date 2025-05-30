@@ -31,7 +31,7 @@ const Profile = () => {
         <div className="skills-row">
           {/* Skill Cards */}
           {[
-            { img: 'download.png', name: 'PHP', desc: 'Server-side scripting language for creating dynamic web pages and applications.' },
+            { img: 'php logo.jpeg', name: 'PHP', desc: 'Server-side scripting language for creating dynamic web pages and applications.' },
             { img: 'logo192.png', name: 'React.js', desc: 'JavaScript library for building interactive and reusable UI components.' },
             { img: 'cyber.jpeg', name: 'Cyber Security', desc: 'Knowledge in securing systems and protecting data from cyber threats.' },
             { img: 'HTML.png', name: 'HTML', desc: 'The foundational markup language used to structure web content.' },
@@ -84,7 +84,7 @@ const Profile = () => {
               <button className="project-github-button">GitHub</button>
             </a>
              <div className="project-card">
-            <img src="phone repair.avif" alt="portfolio Project" className="project-icon" />
+            <img src="phone shop.jpeg" alt="phone repair shop Project" className="project-icon" />
             <p className="project-title">
               An electronic management system which keeps inventory records of devices brought in by customers for repair.
             </p>
