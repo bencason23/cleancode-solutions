@@ -84,7 +84,7 @@ const Profile = () => {
               <button className="project-github-button">GitHub</button>
             </a>
              <div className="project-card">
-            <img src="portfolio.png" alt="portfolio Project" className="project-icon" />
+            <img src="phone repair.avif" alt="portfolio Project" className="project-icon" />
             <p className="project-title">
               An electronic management system which keeps inventory records of devices brought in by customers for repair.
             </p>
