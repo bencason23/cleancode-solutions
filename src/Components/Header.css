@@ -10,6 +10,14 @@
     z-index: 10;
 }
 
+/* NAV and HAMBURGER WRAPPER (Optional if needed) */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -42,6 +50,9 @@
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .hamburger span {
