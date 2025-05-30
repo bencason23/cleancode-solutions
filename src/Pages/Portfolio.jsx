@@ -1,11 +1,9 @@
 import React from 'react';
-import '../Components/Portfolio.css'; // Make sure the path is correct
+import '../Components/Portfolio.css'; // Ensure this path is correct
 
 const Profile = () => {
   return (
     <div className="profile-container">
-      
-
       {/* Profile Section */}
       <div className="profile-box">
         <img src="profile.jpg" alt="Profile" className="profile-picture" />
@@ -29,7 +27,6 @@ const Profile = () => {
       <div className="skills-container">
         <h2 className="skills-title">My Skills</h2>
         <div className="skills-row">
-          {/* Skill Cards */}
           {[
             { img: 'php logo.jpeg', name: 'PHP', desc: 'Server-side scripting language for creating dynamic web pages and applications.' },
             { img: 'logo192.png', name: 'React.js', desc: 'JavaScript library for building interactive and reusable UI components.' },
@@ -66,6 +63,7 @@ const Profile = () => {
               <button className="project-github-button">GitHub</button>
             </a>
           </div>
+
           <div className="project-card">
             <img src="library.jpeg" alt="Library Project" className="project-icon" />
             <p className="project-title">
@@ -75,24 +73,36 @@ const Profile = () => {
               <button className="project-github-button">Visit Site</button>
             </a>
           </div>
+
           <div className="project-card">
-            <img src="portfolio.png" alt="portfolio Project" className="project-icon" />
+            <img src="portfolio.png" alt="Portfolio Project" className="project-icon" />
             <p className="project-title">
-              my portfolio project showcasing skills and some of my project i have worked on and also my skills both technical and soft skills.
+              My portfolio project showcasing skills and some of the projects I have worked on, including both technical and soft skills.
             </p>
             <a href="https://cleancode-solutions-3tvxybcv4-bencason23s-projects.vercel.app" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
-            </div>
-             <div className="project-card">
-            <img src="phone shop.jpeg" alt="phone repair shop Project" className="project-icon" />
+          </div>
+
+          <div className="project-card">
+            <img src="phone shop.jpeg" alt="Phone Repair Shop Project" className="project-icon" />
             <p className="project-title">
-              An electronic management system which keeps inventory records of devices brought in by customers for repair.
+              An electronic management system that keeps inventory records of devices brought in by customers for repair.
             </p>
             <a href="https://dseproject-client-1.onrender.com/" target="_blank" rel="noopener noreferrer">
-              <button className="project-github-button">visit site</button>
+              <button className="project-github-button">Visit Site</button>
             </a>
-          
+          </div>
+
+          <div className="project-card">
+            <img src="phone repair 2.jpeg" alt="Advanced Phone Repair Shop" className="project-icon" />
+            <p className="project-title">
+              A modern and responsive phone repair shop website with booking, tracking, and service catalog features.
+            </p>
+            <a href="https://advanced-phone-repair.onrender.com" target="_blank" rel="noopener noreferrer">
+              <button className="project-github-button">Visit Site</button>
+            </a>
+          </div>
         </div>
       </div>
 
