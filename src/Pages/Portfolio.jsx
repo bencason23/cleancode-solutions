@@ -80,7 +80,7 @@ const Profile = () => {
               My portfolio project showcasing skills and some of the projects I have worked on, including both technical and soft skills.
             </p>
             <a href="https://cleancode-solutions-3tvxybcv4-bencason23s-projects.vercel.app" target="_blank" rel="noopener noreferrer">
-              <button className="project-github-button">GitHub</button>
+              <button className="project-github-button">visit site</button>
             </a>
           </div>
 
@@ -94,16 +94,7 @@ const Profile = () => {
             </a>
           </div>
 
-          <div className="project-card">
-            <img src="phone repair 2.jpeg" alt="Advanced Phone Repair Shop" className="project-icon" />
-            <p className="project-title">
-              A modern and responsive phone repair shop website with booking, tracking, and service catalog features.
-            </p>
-            <a href="https://advanced-phone-repair.onrender.com" target="_blank" rel="noopener noreferrer">
-              <button className="project-github-button">Visit Site</button>
-            </a>
-          </div>
-        </div>
+          
       </div>
 
       {/* Contact Form Section */}
