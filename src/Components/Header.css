@@ -8,6 +8,8 @@
     position: sticky;
     top: 0;
     z-index: 10;
+    width: 100%; /* ✅ Ensures it takes full width */
+    box-sizing: border-box; /* ✅ Includes padding in width */
 }
 
 /* NAV and HAMBURGER WRAPPER (Optional if needed) */
@@ -53,6 +55,8 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    background-color: whitesmoke; /* ✅ Optional for better visibility */
+    z-index: 20; /* ✅ Ensure it stays above nav */
 }
 
 .hamburger span {
@@ -65,6 +69,10 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    .header {
+        padding-right: 60px; /* ✅ Adds room for hamburger on the right */
+    }
+
     .nav-links {
         display: none;
         position: absolute;
