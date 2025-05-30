@@ -83,6 +83,7 @@ const Profile = () => {
             <a href="https://cleancode-solutions-3tvxybcv4-bencason23s-projects.vercel.app" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
+            </div>
              <div className="project-card">
             <img src="phone shop.jpeg" alt="phone repair shop Project" className="project-icon" />
             <p className="project-title">
@@ -91,7 +92,7 @@ const Profile = () => {
             <a href="https://dseproject-client-1.onrender.com/" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">visit site</button>
             </a>
-          </div>
+          
         </div>
       </div>
 
