@@ -83,6 +83,14 @@ const Profile = () => {
             <a href="https://cleancode-solutions-3tvxybcv4-bencason23s-projects.vercel.app" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
             </a>
+             <div className="project-card">
+            <img src="portfolio.png" alt="portfolio Project" className="project-icon" />
+            <p className="project-title">
+              An electronic management system which keeps inventory records of devices brought in by customers for repair.
+            </p>
+            <a href="https://dseproject-client-1.onrender.com/" target="_blank" rel="noopener noreferrer">
+              <button className="project-github-button">visit site</button>
+            </a>
           </div>
         </div>
       </div>
