@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Components/Portfolio.css'; // Ensure this path is correct
+import '../Components/Portfolio.css'; // Make sure this path is correct
 
 const Profile = () => {
   return (
@@ -80,7 +80,7 @@ const Profile = () => {
               My portfolio project showcasing skills and some of the projects I have worked on, including both technical and soft skills.
             </p>
             <a href="https://cleancode-solutions-3tvxybcv4-bencason23s-projects.vercel.app" target="_blank" rel="noopener noreferrer">
-              <button className="project-github-button">visit site</button>
+              <button className="project-github-button">Visit Site</button>
             </a>
           </div>
 
@@ -93,8 +93,7 @@ const Profile = () => {
               <button className="project-github-button">Visit Site</button>
             </a>
           </div>
-
-          
+        </div>
       </div>
 
       {/* Contact Form Section */}
