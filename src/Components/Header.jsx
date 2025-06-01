@@ -24,7 +24,7 @@ const Header = () => {
           <li><a href="#skills" onClick={toggleNav}>Skills</a></li>
           <li><a href="#projects" onClick={toggleNav}>Projects</a></li>
           <li><a href="#contact" onClick={toggleNav}>Contact</a></li>
-          <li><a href="#new cv.pdf" onClick={toggleNav}>my cv</a></li>
+          <li><a href="new cv.pdf" onClick={toggleNav}>my cv</a></li>
           
         </ul>
       </nav>
