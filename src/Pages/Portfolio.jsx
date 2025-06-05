@@ -40,6 +40,7 @@ const Profile = () => {
             { img: 'git.png', name: 'Git', desc: 'Version control system for tracking changes in source code.' },
             { img: 'team player 2.jpeg', name: 'Team Player', desc: 'I am a dedicated team player.' },
             { img: 'problem solver.jpeg', name: 'Problem Solver', desc: 'Ability to identify and solve problems.' },
+            { img: 'problem solver.jpeg', name: 'good communication skills', desc: 'Ability to communicate effectively.' },
           ].map((skill, index) => (
             <div className="skill-card" key={index}>
               <img src={skill.img} alt={skill.name} className="skill-icon" />
