@@ -37,6 +37,8 @@ const Profile = () => {
             { img: 'javascript.jpeg', name: 'JavaScript', desc: 'Powerful scripting language for dynamic, interactive web applications.' },
             { img: 'NODE 2.png', name: 'Node.js', desc: 'JavaScript runtime for building scalable server-side applications.' },
             { img: 'mysql.png', name: 'MySQL', desc: 'Popular relational database management system.' },
+            { img: 'firebase.png', name: 'firebase', desc: 'Popular  nosql database management system.' },
+            { img: 'mongo.jpeg', name: 'mongodb', desc: 'Popular nosql database management system.' },
             { img: 'git.png', name: 'Git', desc: 'Version control system for tracking changes in source code.' },
             { img: 'team player 2.jpeg', name: 'Team Player', desc: 'I am a dedicated team player.' },
             { img: 'problem solver.jpeg', name: 'Problem Solver', desc: 'Ability to identify and solve problems.' },
