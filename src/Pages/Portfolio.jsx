@@ -96,6 +96,17 @@ const Profile = () => {
               <button className="project-github-button">Visit Site</button>
             </a>
           </div>
+
+          {/* AI Chatbot Project */}
+          <div className="project-card">
+            <img src="chatbot.png" alt="AI Chatbot Project" className="project-icon" />
+            <p className="project-title">
+              AI-powered chatbot built to provide users with instant answers and support using natural language processing.
+            </p>
+            <a href="https://your-chatbot-project-link.com" target="_blank" rel="noopener noreferrer">
+              <button className="project-github-button">Visit Site</button>
+            </a>
+          </div>
         </div>
       </div>
 
