@@ -103,7 +103,7 @@ const Profile = () => {
             <p className="project-title">
               AI-powered chatbot built to provide users with instant answers and support using natural language processing.
             </p>
-            <a href="https://your-chatbot-project-link.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/21/09/20250721092125-TAYEMQZD.json" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">Visit Site</button>
             </a>
           </div>
