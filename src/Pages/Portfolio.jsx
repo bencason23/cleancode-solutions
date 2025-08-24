@@ -109,6 +109,17 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      <div className="project-card">
+            <img src="unify.png" alt="AI Chatbot Project" className="project-icon" />
+            <p className="project-title">
+              "A real-time email-based chat application that allows users to send, receive, and organize conversations seamlessly. Built with a clean UI and secure backend integration, it combines the familiarity of email with the instant experience of chat."
+            </p>
+            <a href="https://unify-f1ee6.web.app/" target="_blank" rel="noopener noreferrer">
+              <button className="project-github-button">start chatting</button>
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Contact Form Section */}
       <div className="contact-form-container">
