@@ -99,7 +99,7 @@ const Profile = () => {
 
           {/* AI Chatbot Project */}
           <div className="project-card">
-            <img src="chatbot.jpg" alt="AI Chatbot Project" className="project-icon" />
+            <img src="logo.png" alt="AI Chatbot Project" className="project-icon" />
             <p className="project-title">
               AI-powered chatbot built to provide users with instant answers and support using natural language processing.
             </p>
