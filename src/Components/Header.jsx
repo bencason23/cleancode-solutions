@@ -20,10 +20,10 @@ const Header = () => {
 
       <nav className="nav">
         <ul className={`nav-links ${isOpen ? 'show' : ''}`}>
-          <li><a href="about" onClick={toggleNav}></a></li>
-          <li><a href="skills" onClick={toggleNav}></a></li>
-          <li><a href="projects" onClick={toggleNav}></a></li>
-          <li><a href="contact" onClick={toggleNav}></a></li>
+          <li><a href="about" onClick={toggleNav}>About</a></li>
+          <li><a href="skills" onClick={toggleNav}>skills</a></li>
+          <li><a href="projects" onClick={toggleNav}>projects</a></li>
+          <li><a href="contact" onClick={toggleNav}>contacts</a></li>
           <li><a href="Benson_Kamau_Resume.pdf" onClick={toggleNav}>my resume</a></li>
           
         </ul>
