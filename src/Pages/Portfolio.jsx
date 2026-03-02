@@ -110,7 +110,7 @@ const Profile = () => {
         </div>
       </div>
       <div className="project-card">
-            <img src="unify.png" alt="AI Chatbot Project" className="project-icon" />
+            <img src="HTML.png" alt=" Chatting app Project" className="project-icon" />
             <p className="project-title">
               "A real-time email-based chat application that allows users to send, receive, and organize conversations seamlessly. Built with a clean UI and secure backend integration, it combines the familiarity of email with the instant experience of chat."
             </p>
