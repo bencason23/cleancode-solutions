@@ -60,7 +60,7 @@ const Profile = () => {
           <div className="project-card">
             <img src="project 3.png" alt="chatting App Project" className="project-icon" />
             <p className="project-title">
-              "A real-time email-based chat application that allows users to send, receive, and organize conversations seamlessly.
+              A real-time email-based chat application that allows users to send, receive, and organize conversations seamlessly.
             </p>
             <a href="https://unify-f1ee6.web.app/" target="_blank" rel="noopener noreferrer">
               <button className="project-github-button">GitHub</button>
