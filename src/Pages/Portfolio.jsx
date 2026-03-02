@@ -35,6 +35,7 @@ const Profile = () => {
             { img: 'CSS.png', name: 'CSS', desc: 'Styling language used to design and layout web pages.' },
             { img: 'tailwind.png', name: 'Tailwind CSS', desc: 'Utility-first CSS framework for building custom, responsive designs efficiently.' },
             { img: 'javascript.jpeg', name: 'JavaScript', desc: 'Powerful scripting language for dynamic, interactive web applications.' },
+            { img: 'python.jpeg', name: 'python and machine learning', desc: 'powerful languages to build AI models.' },
             { img: 'NODE 2.png', name: 'Node.js', desc: 'JavaScript runtime for building scalable server-side applications.' },
             { img: 'mysql.png', name: 'MySQL', desc: 'Popular relational database management system.' },
             { img: 'firebase.png', name: 'firebase', desc: 'Popular  nosql database management system.' },
