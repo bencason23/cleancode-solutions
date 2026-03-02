@@ -24,7 +24,8 @@ const Profile = () => {
       </div>
 
       {/* Skills Section */}
-      <div className="skills-container">
+      <div id="skills" className="skills-container">
+
         <h2 className="skills-title">My Skills</h2>
         <div className="skills-row">
           {[
