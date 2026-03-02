@@ -19,15 +19,24 @@ const Header = () => {
       </div>
 
       <nav className="nav">
-        <ul className={`nav-links ${isOpen ? 'show' : ''}`}>
-          <li><a href="about" onClick={toggleNav}>About</a></li>
-          <li><a href="skills" onClick={toggleNav}>skills</a></li>
-          <li><a href="projects" onClick={toggleNav}>projects</a></li>
-          <li><a href="contact" onClick={toggleNav}>contacts</a></li>
-          <li><a href="Benson_Kamau_Resume.pdf" onClick={toggleNav}>my resume</a></li>
-          
-        </ul>
-      </nav>
+  <ul className={`nav-links ${isOpen ? 'show' : ''}`}>
+    <li><a href="#about" onClick={toggleNav}>About</a></li>
+    <li><a href="#skills" onClick={toggleNav}>Skills</a></li>
+    <li><a href="#projects" onClick={toggleNav}>Projects</a></li>
+    <li><a href="#contact" onClick={toggleNav}>Contact</a></li>
+    <li>
+      <a 
+        href="/Benson_Kamau_Resume.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        onClick={toggleNav}
+      >
+        My Resume
+      </a>
+    </li>
+  </ul>
+</nav>
+
     </header>
   );
 };
