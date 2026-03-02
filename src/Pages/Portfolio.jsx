@@ -63,7 +63,7 @@ const Profile = () => {
               A real-time email-based chat application that allows users to send, receive, and organize conversations seamlessly.
             </p>
             <a href="https://unify-f1ee6.web.app/" target="_blank" rel="noopener noreferrer">
-              <button className="project-github-button">GitHub</button>
+              <button className="project-github-button">Visit site</button>
             </a>
           </div>
 
