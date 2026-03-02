@@ -58,7 +58,7 @@ const Profile = () => {
         <h2 className="projects-title">Some of My Projects</h2>
         <div className="projects-row">
           <div className="project-card">
-            <img src="project 3.png" alt="chatting App Project" className="project-icon" />
+            <img src="unify.png" alt="chatting App Project" className="project-icon" />
             <p className="project-title">
               A real-time email-based chat application that allows users to send, receive, and organize conversations seamlessly.
             </p>
