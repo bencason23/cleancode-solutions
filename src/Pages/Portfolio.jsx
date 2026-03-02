@@ -11,7 +11,8 @@ const Profile = () => {
       </div>
 
       {/* About Me Section */}
-      <div className="about-me-container">
+      <div id="about" className="about-me-container">
+
         <h2><b>ABOUT ME</b></h2>
         <p className="about-me-description">
           Hi, I am a lifelong learner and technology enthusiast who thrives in dynamic and collaborative environments.
@@ -56,7 +57,8 @@ const Profile = () => {
       </div>
 
       {/* Projects Section */}
-      <div className="projects-container">
+      <div id="projects" className="projects-container">
+
         <h2 className="projects-title">Some of My Projects</h2>
         <div className="projects-row">
           <div className="project-card">
@@ -114,7 +116,8 @@ const Profile = () => {
       
 
       {/* Contact Form Section */}
-      <div className="contact-form-container">
+      <div id="contact" className="contact-form-container">
+
         <h2 className="contact-title">Contact Me</h2>
         <form
           className="contact-form"
