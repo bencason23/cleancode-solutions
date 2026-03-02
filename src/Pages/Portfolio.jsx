@@ -6,7 +6,7 @@ const Profile = () => {
     <div className="profile-container">
       {/* Profile Section */}
       <div className="profile-box">
-        <img src="profile.jpg" alt="Profile" className="profile-picture" />
+        <img src="1772458447565.jpg" alt="Profile" className="profile-picture" />
         <h1 className="job-title">Benson .C. Kamau</h1>
       </div>
 
