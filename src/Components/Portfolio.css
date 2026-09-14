@@ -1,301 +1,686 @@
+/* ============================================
+   MODERN PORTFOLIO CSS
+   Refreshed: cohesive palette, soft depth, clean typography
+   ============================================ */
 
-
-/* Full-width Profile Container */
-.profile-container {
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  width: 100%;
-  max-width: 1800px;
-  padding: 30px;
-  margin: auto;
-  position: relative;
+/* ---------- Design Tokens ---------- */
+:root {
+  --bg-primary: #f7f9fc;
+  --bg-secondary: #ffffff;
+  --bg-elevated: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --accent: #6366f1;
+  --accent-soft: rgba(99, 102, 241, 0.12);
+  --accent-alt: #0ea5e9;
+  --accent-warm: #f97316;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 10px 25px -10px rgba(15, 23, 42, 0.15);
+  --shadow-lg: 0 25px 50px -20px rgba(15, 23, 42, 0.25);
+  --gradient-brand: linear-gradient(135deg, #6366f1 0%, #0ea5e9 50%, #06b6d4 100%);
+  --gradient-soft: linear-gradient(135deg, #eef2ff 0%, #e0f2fe 100%);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Profile Section */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Full-width Profile Container ---------- */
+.profile-container {
+  background: var(--bg-primary);
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(99, 102, 241, 0.10), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(14, 165, 233, 0.10), transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(6, 182, 212, 0.08), transparent 50%);
+  width: 100%;
+  max-width: 1800px;
+  padding: 3rem 2rem;
+  margin: auto;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* ---------- Profile Section ---------- */
 .profile-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 2.5rem 1rem 1rem;
 }
 
 .profile-picture {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  object-fit: cover;
+  margin-bottom: 1.25rem;
+  border: 4px solid var(--bg-secondary);
+  box-shadow:
+    0 0 0 4px var(--accent),
+    0 20px 40px -15px rgba(99, 102, 241, 0.45);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.profile-picture:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 0 0 4px var(--accent-alt),
+    0 28px 55px -18px rgba(14, 165, 233, 0.55);
 }
 
 .job-title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin: 0;
 }
 
-/* Description Section */
+/* ---------- Description Section ---------- */
 .description-box {
   text-align: left;
-  margin: 20px 0;
+  margin: 2rem auto;
   width: 100%;
+  max-width: 900px;
+  padding: 2rem 2.25rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.description-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--gradient-brand);
+  border-radius: 5px 0 0 5px;
 }
 
 .description {
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #eb4a0a;
-  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 15px #00ffcc;
-  white-space: nowrap;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-shadow: none;
+  white-space: normal;
+  overflow: visible;
+  border-right: none;
+  line-height: 1.75;
+  animation: none;
+  margin: 0;
+}
+
+/* Optional: keep typing animation utility if you still want it */
+.typing-effect {
+  display: inline-block;
   overflow: hidden;
-  border-right: 2px solid #00ffcc;
+  white-space: nowrap;
+  border-right: 2px solid var(--accent);
   animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 
-/* Animation Keyframes */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #00ffcc; }
+  from, to { border-color: transparent; }
+  50% { border-color: var(--accent); }
 }
 
-/* Projects Section */
+/* ---------- Projects Section ---------- */
 .projects-container {
   width: 100%;
   max-width: 1200px;
-  background-color: white;
-  color: black;
-  padding: 40px 20px;
-  border-radius: 40px;
-  margin: 30px auto 0;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 3rem 2rem;
+  border-radius: var(--radius-xl);
+  margin: 3rem auto 0;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
 }
 
 .projects-title {
   text-align: left;
-  font-size: 1.8em;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0 0 2rem;
+  color: var(--text-primary);
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.projects-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 70%;
+  background: var(--gradient-brand);
+  border-radius: 6px;
 }
 
 .projects-row {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-/* Project Card */
+/* ---------- Project Card ---------- */
 .project-card {
-  background-color: white;
-  border: 1px solid #00ffcc;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  margin: 0;
   width: 300px;
   text-align: left;
-  color: black;
+  color: var(--text-primary);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-brand);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg);
 }
 
 .project-icon {
-  width: 129px;
-  height: 120px;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  background: var(--gradient-soft);
 }
 
-/* GitHub Buttons */
+/* ---------- Buttons ---------- */
 .github-button,
 .project-github-button {
-  display: block;
-  margin: 10px 0;
-  padding: 10px 20px;
-  font-size: 1em;
-  color: white;
-  background-color: green;
+  display: inline-block;
+  margin: 1rem 0 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  background: var(--gradient-brand);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+  box-shadow: 0 8px 20px -8px rgba(99, 102, 241, 0.55);
+  text-decoration: none;
+  align-self: flex-start;
 }
 
 .github-button:hover,
 .project-github-button:hover {
-  background-color: #555;
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+  box-shadow: 0 14px 28px -10px rgba(99, 102, 241, 0.65);
+  background: var(--gradient-brand);
 }
 
-/* Resume Button */
+.github-button:active,
+.project-github-button:active {
+  transform: translateY(0);
+}
+
+/* ---------- Resume Button ---------- */
 .resume-button {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  font-size: 0.9em;
-  color: white;
-  background-color: green;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--gradient-brand);
   border: none;
-  border-radius: 15px;
+  border-radius: 999px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: transform var(--transition), box-shadow var(--transition);
   cursor: pointer;
+  box-shadow: 0 8px 20px -8px rgba(99, 102, 241, 0.55);
+  z-index: 5;
 }
 
 .resume-button:hover {
-  background-color: #555;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -10px rgba(99, 102, 241, 0.65);
 }
 
-/* Skills Section */
+/* ---------- Skills Section ---------- */
 .skills-container {
-  padding: 20px;
+  padding: 3rem 2rem;
   text-align: left;
   width: 100%;
   max-width: 1200px;
-  margin: auto;
+  margin: 3rem auto 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
 }
 
 .skills-title {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  color: #00ffcc;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0 0 2rem;
+  color: var(--text-primary);
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.skills-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 70%;
+  background: var(--gradient-brand);
+  border-radius: 6px;
 }
 
 .skills-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 1.25rem;
 }
 
 .skill-card {
-  flex: 1 1 calc(25% - 40px); /* Four per row */
-  box-sizing: border-box;
-  background-color: white;
-  border: 1px solid red;
-  border-radius: 8px;
-  padding: 20px;
+  flex: 1 1 calc(25% - 1.25rem);
+  min-width: 200px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
   text-align: left;
-  color: black;
-  margin: 10px 0;
+  color: var(--text-primary);
+  margin: 0;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-soft);
+  opacity: 0;
+  transition: opacity var(--transition);
+  z-index: 0;
+}
+
+.skill-card:hover::after {
+  opacity: 1;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.skill-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .skill-icon {
-  width: 100px;
-  height: 90px;
-  margin-bottom: 10px;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-primary);
+  padding: 8px;
+  border: 1px solid var(--border);
 }
 
 .skill-name {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 5px 0;
-  color: #00ffcc;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  color: var(--text-primary);
+  letter-spacing: -0.2px;
 }
 
 .skill-description {
-  font-size: 0.9em;
-  color: #aaa;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.55;
 }
 
-/* Contact Form Section */
+/* ---------- Contact Form Section ---------- */
 .contact-form-container {
-  margin: 50px auto;
-  padding: 30px;
-  background: orangered;
-  border-radius: 15px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 3rem auto;
+  padding: 3rem 2.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
   width: 100%;
   max-width: 1200px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gradient-brand);
 }
 
 .contact-title {
   font-size: 2rem;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 2rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-brand);
+  border-radius: 3px;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1.25rem;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.5rem;
 }
 
 label {
-  font-size: 1.2rem;
-  color: #fff;
-  margin-bottom: 5px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.3px;
+  margin-bottom: 0;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 12px 15px;
+  padding: 0.9rem 1.1rem;
   font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+}
+
+input:hover,
+textarea:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-secondary);
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  border-color: var(--accent);
+  background: var(--bg-secondary);
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 textarea {
-  resize: none;
+  resize: vertical;
+  min-height: 120px;
 }
 
 .contact-button {
-  padding: 12px 20px;
+  padding: 1rem 1.5rem;
   font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background: var(--gradient-brand);
   border: none;
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+  box-shadow: 0 10px 25px -10px rgba(99, 102, 241, 0.65);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transition: left 0.6s ease;
 }
 
 .contact-button:hover {
-  background-color: #0056b3;
-  box-shadow: 0px 5px 10px rgba(0, 123, 255, 0.3);
   transform: translateY(-3px);
+  filter: brightness(1.05);
+  box-shadow: 0 18px 35px -12px rgba(99, 102, 241, 0.75);
+}
+
+.contact-button:hover::after {
+  left: 100%;
 }
 
 .contact-button:active {
-  transform: translateY(1px);
+  transform: translateY(0);
 }
 
-/* Responsive Layout */
+/* ---------- Responsive Layout ---------- */
+@media (max-width: 1024px) {
+  .skill-card {
+    flex: 1 1 calc(33.333% - 1.25rem);
+  }
+}
+
 @media (max-width: 768px) {
+  .profile-container {
+    padding: 2rem 1rem;
+  }
+
+  .job-title {
+    font-size: 1.6rem;
+  }
+
+  .profile-picture {
+    width: 160px;
+    height: 160px;
+  }
+
+  .description-box {
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .projects-container,
+  .skills-container,
+  .contact-form-container {
+    padding: 2rem 1.25rem;
+    border-radius: var(--radius-lg);
+    margin-top: 2rem;
+  }
+
+  .projects-title,
+  .skills-title,
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
   .projects-row,
   .skills-row {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
 
   .project-card,
   .skill-card {
-    width: 90% !important;
+    width: 100% !important;
+    flex: 1 1 100%;
   }
 
-  .contact-form-container {
-    padding: 20px;
+  .resume-button {
+    position: static;
+    display: inline-block;
+    margin-bottom: 1rem;
   }
 
   .contact-title {
-    font-size: 1.8rem;
+    letter-spacing: 1px;
   }
 }
 
-/* Smooth Scroll for anchor links */
-html {
-  scroll-behavior: smooth;
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .job-title {
+    font-size: 1.35rem;
+  }
+
+  .profile-picture {
+    width: 130px;
+    height: 130px;
+  }
+
+  .projects-container,
+  .skills-container,
+  .contact-form-container {
+    padding: 1.5rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .contact-button {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.75rem 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- Scrollbar (optional polish) ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
 }
